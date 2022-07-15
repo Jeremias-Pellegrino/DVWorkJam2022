@@ -8,9 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Margarete",
+"language": "GDScript",
+"path": "res://Margarete/Margarete.gd"
+} ]
+_global_script_class_icons={
+"Margarete": ""
+}
+
 [application]
 
 config/name="WorkJam"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [physics]
