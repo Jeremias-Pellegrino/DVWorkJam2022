@@ -9,53 +9,8 @@
 [ext_resource path="res://png/muebles/cama.png" type="Texture" id=7]
 [ext_resource path="res://ClickableObject/ClickableObject.tscn" type="PackedScene" id=8]
 [ext_resource path="res://png/muebles/caja fuerte.png" type="Texture" id=9]
-
-[sub_resource type="Shader" id=1]
-code = "shader_type canvas_item;
-render_mode unshaded;
-
-uniform bool Smooth = true;
-uniform float width : hint_range(0.0, 64) = 4.0;
-uniform vec4 outline_color : hint_color = vec4(100.0, 0.0, 70.0, 0.7);
-uniform int pixel_size : hint_range(1, 10) = 4;
-uniform float width_speed :hint_range(0.1, 10) = 4;
-
-void fragment()
-{
-    float _width = width + ((sin(TIME*width_speed) + 1f) -2f) * 10f;
-    vec2 unit = (1.0/float(pixel_size) ) / vec2(textureSize(TEXTURE, 0));
-    vec4 pixel_color = texture(TEXTURE, UV);
-    if (pixel_color.a == 0.0) {
-        pixel_color = outline_color;
-        pixel_color.a = 0.0;
-        for (float x = -ceil(_width); x <= ceil(_width); x++) {
-            for (float y = -ceil(_width); y <= ceil(_width); y++) {
-                if (texture(TEXTURE, UV + vec2(x*unit.x, y*unit.y)).a == 0.0 || (x==0.0 && y==0.0)) {
-                    continue;
-                }
-                if (Smooth) {
-                    pixel_color.a += outline_color.a / (pow(x,2)+pow(y,2)) * (1.0-pow(2.0, -_width));
-                    if (pixel_color.a > 1.0) {
-                        pixel_color.a = 1.0;
-                    }
-                } else {
-                    pixel_color.a = outline_color.a;
-                    return
-                }
-            }
-        }
-    }
-    COLOR = pixel_color;
-}"
-
-[sub_resource type="ShaderMaterial" id=2]
-render_priority = 1
-shader = SubResource( 1 )
-shader_param/Smooth = true
-shader_param/width = 21.333
-shader_param/outline_color = Color( 100, 0, 70, 0.7 )
-shader_param/pixel_size = 10
-shader_param/width_speed = 2.597
+[ext_resource path="res://ClickableObject/glow.tres" type="Material" id=10]
+[ext_resource path="res://Navigation2D.tscn" type="PackedScene" id=11]
 
 [node name="Control" type="Control"]
 margin_right = 1021.0
@@ -80,6 +35,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Silla" type="TextureRect" parent="PanelContainer/Panel"]
 margin_left = 255.0
@@ -130,7 +88,8 @@ z_as_relative = false
 [node name="Clickable" parent="." instance=ExtResource( 8 )]
 
 [node name="Sprite" type="Sprite" parent="."]
-material = SubResource( 2 )
-position = Vector2( 762, 440 )
-scale = Vector2( 1.5, 1.5 )
+material = ExtResource( 10 )
+position = Vector2( 761, 425 )
 texture = ExtResource( 7 )
+
+[node name="Navigation2D" parent="." instance=ExtResource( 11 )]
