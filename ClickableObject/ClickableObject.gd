@@ -1,15 +1,11 @@
 extends Area2D
 
-onready var sprite : Sprite = $Grass1
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
+onready var sprite : Sprite = $Sprite
+# Hay que ajustar el script para que la animacion del glow (shader)
+# comience al hacer hover
 func _on_Area2D_mouse_entered():
-	$Grass1.queue_free()
-	print("_on_Area2D_mouse_entered")
+	sprite.material.set_shader_param("width", 20)
+	
 
-func _on_Area2D_body_entered(body):
-	sprite.rotate(1/2)
-	print("_on_Area2D_mouse_entered")
+func _on_Area2D_mouse_exited():
+	sprite.material.set_shader_param("width", 0)
