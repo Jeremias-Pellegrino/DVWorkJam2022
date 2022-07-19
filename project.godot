@@ -21,13 +21,13 @@ _global_script_class_icons={
 [application]
 
 config/name="WorkJam"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://Dimension1/Dimension1.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=600
-window/size/height=400
+window/size/width=1280
+window/size/height=720
 window/dpi/allow_hidpi=true
 
 [importer_defaults]

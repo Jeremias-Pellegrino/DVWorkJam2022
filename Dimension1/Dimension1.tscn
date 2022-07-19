@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Shaders/glow.tres" type="Material" id=3]
+[ext_resource path="res://png/fondo.png" type="Texture" id=4]
+[ext_resource path="res://Margarete/Margarete.tscn" type="PackedScene" id=9]
+[ext_resource path="res://png/libros/cuaderno 1.png" type="Texture" id=11]
+[ext_resource path="res://ClickableObject/ClickableObject.gd" type="Script" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 58.8387, 61.7695 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 643, 360 )
+scale = Vector2( 3.35417, 3.36111 )
+texture = ExtResource( 4 )
+
+[node name="Margarete" parent="." instance=ExtResource( 9 )]
+position = Vector2( 261, 517 )
+z_index = 1
+
+[node name="Libro" type="Area2D" parent="."]
+position = Vector2( 500, 150 )
+script = ExtResource( 13 )
+
+[node name="Sprite" type="Sprite" parent="Libro"]
+material = ExtResource( 3 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Libro"]
+position = Vector2( 0, -1 )
+scale = Vector2( 1, 0.999999 )
+shape = SubResource( 1 )
+
+[connection signal="mouse_entered" from="Libro" to="Libro" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Libro" to="Libro" method="_on_Area2D_mouse_exited"]
