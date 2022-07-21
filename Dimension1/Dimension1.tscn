@@ -1,13 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Shaders/glow.tres" type="Material" id=3]
+[ext_resource path="res://ClickableObject/ClickableObject.tscn" type="PackedScene" id=1]
 [ext_resource path="res://png/fondo.png" type="Texture" id=4]
 [ext_resource path="res://Margarete/Margarete.tscn" type="PackedScene" id=9]
-[ext_resource path="res://png/libros/cuaderno 1.png" type="Texture" id=11]
-[ext_resource path="res://ClickableObject/ClickableObject.gd" type="Script" id=13]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 58.8387, 61.7695 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -20,19 +15,24 @@ texture = ExtResource( 4 )
 position = Vector2( 261, 517 )
 z_index = 1
 
-[node name="Libro" type="Area2D" parent="."]
-position = Vector2( 500, 150 )
-script = ExtResource( 13 )
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_right = 40.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Sprite" type="Sprite" parent="Libro"]
-material = ExtResource( 3 )
-scale = Vector2( 3, 3 )
-texture = ExtResource( 11 )
+[node name="Viewport" type="Viewport" parent="HSeparator"]
+size = Vector2( 400, 400 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Libro"]
-position = Vector2( 0, -1 )
-scale = Vector2( 1, 0.999999 )
-shape = SubResource( 1 )
+[node name="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1109, 294 )
+spritePath = "res://png/libros/cuaderno 1.png"
 
-[connection signal="mouse_entered" from="Libro" to="Libro" method="_on_Area2D_mouse_entered"]
-[connection signal="mouse_exited" from="Libro" to="Libro" method="_on_Area2D_mouse_exited"]
+[node name="Area2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1036, 120 )
+spritePath = "res://png/muebles/caja fuerte.png"
+
+[node name="Area2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 816, 53 )
+spritePath = "res://png/muebles/caja fuerte.png"
