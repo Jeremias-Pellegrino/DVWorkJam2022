@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa.png-38a424ce9412256cf21fc428eb4db315.stex"
+path="res://.import/mesa.png-34e9fbd03c98485e619e5ba1f95cf3cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/muebles/mesa.png"
-dest_files=[ "res://.import/mesa.png-38a424ce9412256cf21fc428eb4db315.stex" ]
+source_file="res://Assets-Visual/muebles/mesa.png"
+dest_files=[ "res://.import/mesa.png-34e9fbd03c98485e619e5ba1f95cf3cc.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cuaderno A.png-603dd2368a1d454b78add4625c47b48e.stex"
+path="res://.import/cuaderno A.png-430f54ab43c1ef8ebd15df36dc5decab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/libros/cuaderno A.png"
-dest_files=[ "res://.import/cuaderno A.png-603dd2368a1d454b78add4625c47b48e.stex" ]
+source_file="res://Assets-Visual/libros/cuaderno A.png"
+dest_files=[ "res://.import/cuaderno A.png-430f54ab43c1ef8ebd15df36dc5decab.stex" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 [ext_resource path="res://ClickableObject/ClickableObject.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Inventory/InventoryItem/InventoryItem.tscn" type="PackedScene" id=2]
-[ext_resource path="res://png/muebles/caja fuerte.png" type="Texture" id=3]
-[ext_resource path="res://png/fondo.png" type="Texture" id=4]
+[ext_resource path="res://Assets-Visual/muebles/caja fuerte.png" type="Texture" id=3]
+[ext_resource path="res://Assets-Visual/fondo.png" type="Texture" id=4]
 [ext_resource path="res://Margarete/Margarete.tscn" type="PackedScene" id=9]
 
 [sub_resource type="StyleBoxFlat" id=2]
@@ -59,14 +59,14 @@ margin_right = 950.0
 
 [node name="Panel" type="Panel" parent="Inventory/HBoxContainer"]
 margin_left = 960.0
-margin_right = 1260.0
+margin_right = 960.0
 margin_bottom = 70.0
 custom_styles/panel = SubResource( 2 )
 
 [node name="Game" type="Node2D" parent="."]
 position = Vector2( 0, 100 )
 
-[node name="Sprite" type="Sprite" parent="Game"]
+[node name="Fondo" type="Sprite" parent="Game"]
 position = Vector2( 643, 360 )
 scale = Vector2( 3.35417, 3.36111 )
 texture = ExtResource( 4 )
@@ -75,23 +75,24 @@ texture = ExtResource( 4 )
 position = Vector2( 305, 576 )
 z_index = 1
 
-[node name="Area2D" parent="Game" instance=ExtResource( 1 )]
-position = Vector2( 1109, 294 )
+[node name="Mesa" parent="Game" instance=ExtResource( 1 )]
+position = Vector2( 499, 467 )
+spritePath = "res://Assets-Visual/muebles/mesa.png"
+
+[node name="Cuadro" parent="Game" instance=ExtResource( 1 )]
+position = Vector2( 1173, 357 )
 spritePath = "res://png/libros/cuaderno 1.png"
 
-[node name="Area2D3" parent="Game" instance=ExtResource( 1 )]
-position = Vector2( 1036, 120 )
-spritePath = "res://png/muebles/caja fuerte.png"
+[node name="Caja" parent="Game" instance=ExtResource( 1 )]
+position = Vector2( 986, 423 )
+spritePath = "res://Assets-Visual/muebles/caja fuerte.png"
 
-[node name="Area2D5" parent="Game" instance=ExtResource( 1 )]
-position = Vector2( 816, 79 )
-spritePath = "res://png/muebles/caja fuerte.png"
-
-[node name="Area2D6" parent="Game" instance=ExtResource( 1 )]
-position = Vector2( 854, 425 )
-spritePath = "res://png/muebles/caja fuerte.png"
+[node name="Cama" parent="Game" instance=ExtResource( 1 )]
+position = Vector2( 953, 581 )
+spritePath = "res://Assets-Visual/muebles/cama.png"
 
 [node name="Navigation2D" type="Navigation2D" parent="Game"]
+visible = false
 position = Vector2( 643, 360 )
 scale = Vector2( 3.35417, 3.36111 )
 
@@ -168,14 +169,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="BottomBar/Panel/HBoxContainer"]
-margin_left = 524.0
-margin_right = 582.0
-margin_bottom = 125.0
+[node name="TextureRect" type="TextureRect" parent="BottomBar"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 180.0
+margin_bottom = 138.0
 texture = ExtResource( 3 )
 stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Panel" parent="BottomBar/Panel/HBoxContainer" instance=ExtResource( 2 )]
-margin_left = 586.0
-margin_right = 736.0
-margin_bottom = 125.0
+[node name="Panel2" parent="BottomBar" instance=ExtResource( 2 )]
+margin_left = 565.0
+margin_top = 10.0
+margin_right = 715.0
+margin_bottom = 135.0

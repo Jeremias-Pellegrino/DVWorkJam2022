@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Muestra guia.png-cecb60f6caaeb45bf1c7d356fd0691c7.stex"
+path="res://.import/Muestra guia.png-e014ee07249099867adcaec65741e5f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/Muestra guia.png"
-dest_files=[ "res://.import/Muestra guia.png-cecb60f6caaeb45bf1c7d356fd0691c7.stex" ]
+source_file="res://Assets-Visual/Muestra guia.png"
+dest_files=[ "res://.import/Muestra guia.png-e014ee07249099867adcaec65741e5f7.stex" ]
 
 [params]
 
