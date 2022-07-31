@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="WorkJam"
-run/main_scene="res://Dimension1/Dimension1.tscn"
+run/main_scene="res://Menu/Menu.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -29,7 +29,6 @@ config/icon="res://icon.png"
 window/size/width=1280
 window/size/height=720
 window/size/resizable=false
-window/dpi/allow_hidpi=true
 
 [importer_defaults]
 

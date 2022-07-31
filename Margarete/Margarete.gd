@@ -8,8 +8,8 @@ enum state {
 
 }
 onready var animation: AnimatedSprite = $AnimatedSprite
-
-var speed = Vector2(128,128)
+var speed = 200
+var speedVector = Vector2(speed,speed)
 var last_mouse_pos = null
 
 func _input(event):
@@ -23,4 +23,4 @@ func _physics_process(delta):
 		if direction_vector.length() < 3:
 			return
 	
-		var velocity = move_and_slide(direction_vector.normalized() * speed)
+		var velocity = move_and_slide(direction_vector.normalized() * speedVector)

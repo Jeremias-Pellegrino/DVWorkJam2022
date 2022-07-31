@@ -3,7 +3,7 @@ extends PanelContainer
 export var imagePath: String
 
 onready var textureRect: TextureRect = $Panel/CenterContainer/TextureRect
-# como lo hago privado?
+
 enum visibility {
 	SHOWN, HIDDING
 }
@@ -13,7 +13,7 @@ var state = visibility.SHOWN
 func _ready():
 	if imagePath == null || not imagePath.empty():
 		textureRect.texture = load(imagePath)
-	else:
+	elif textureRect == null:
 		pass
 
 #funciona muchisimo mejor que usando sprites. El texturerect es quien invoca mouse_entered..
