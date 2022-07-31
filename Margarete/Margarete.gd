@@ -24,12 +24,3 @@ func _physics_process(delta):
 			return
 	
 		var velocity = move_and_slide(direction_vector.normalized() * speed)
-		
-#		if velocity.x > velocity.y && velocity.x < -velocity.y:
-#			$AnimationPlayer.play("MoveTop")
-#		elif velocity.x < velocity.y && velocity.x > -velocity.y:
-#			$AnimationPlayer.play("MoveDown")
-#		else:
-#			$AnimationPlayer.play("MoveSides")
-#			$Sprite.flip_h = velocity.x < 0
-
