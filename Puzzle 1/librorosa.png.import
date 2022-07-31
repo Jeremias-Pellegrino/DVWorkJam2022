@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/librorosa.png-12e86a2b091937372725ecc8db8aff7e.stex"
+path="res://.import/librorosa.png-56933603f4900781e080712190c40083.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/librorosa.png"
-dest_files=[ "res://.import/librorosa.png-12e86a2b091937372725ecc8db8aff7e.stex" ]
+source_file="res://Puzzle 1/librorosa.png"
+dest_files=[ "res://.import/librorosa.png-56933603f4900781e080712190c40083.stex" ]
 
 [params]
 

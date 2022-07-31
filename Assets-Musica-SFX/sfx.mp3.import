@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/sfx.mp3-aad33d65fee08f9a0281c7657e8cd6a0.mp3str"
+path="res://.import/sfx.mp3-9ea48d3170234bf456b3691541f0435f.mp3str"
 
 [deps]
 
-source_file="res://sfx/sfx.mp3"
-dest_files=[ "res://.import/sfx.mp3-aad33d65fee08f9a0281c7657e8cd6a0.mp3str" ]
+source_file="res://Assets-Musica-SFX/sfx.mp3"
+dest_files=[ "res://.import/sfx.mp3-9ea48d3170234bf456b3691541f0435f.mp3str" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Screenshot 202biblioteca.png-2b22c136f6406674c80e8893eaefd0e8.stex"
+path="res://.import/libromoradot.png-21af2369a0e68b6e02a847d98ac55643.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Screenshot 202biblioteca.png"
-dest_files=[ "res://.import/Screenshot 202biblioteca.png-2b22c136f6406674c80e8893eaefd0e8.stex" ]
+source_file="res://Puzzle 1/libromoradot.png"
+dest_files=[ "res://.import/libromoradot.png-21af2369a0e68b6e02a847d98ac55643.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

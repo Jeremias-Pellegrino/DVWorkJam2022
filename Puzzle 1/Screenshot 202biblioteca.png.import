@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/librorojo.png-10210b88e7fb9672baeaa38b306d12bc.stex"
+path="res://.import/Screenshot 202biblioteca.png-0868caabd94993901db99e8ab390469f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/librorojo.png"
-dest_files=[ "res://.import/librorojo.png-10210b88e7fb9672baeaa38b306d12bc.stex" ]
+source_file="res://Puzzle 1/Screenshot 202biblioteca.png"
+dest_files=[ "res://.import/Screenshot 202biblioteca.png-0868caabd94993901db99e8ab390469f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets-Visual/menu-background.jpg" type="Texture" id=1]
+[ext_resource path="res://Menu/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Assets-Musica-SFX/WGJam - 23:07:2022 00.mp3" type="AudioStream" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.45098, 0.0745098, 0.0745098, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color( 0.709804, 0.129412, 0.129412, 1 )
+border_blend = true
+corner_detail = 3
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 1280.0
+margin_bottom = 960.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="PanelContainer"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 1279.0
+margin_bottom = 958.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Panel"]
+anchor_left = 0.181
+anchor_top = 0.758
+anchor_right = 0.815
+anchor_bottom = 0.92
+margin_left = -0.318008
+margin_top = -110.406
+margin_right = -0.570068
+margin_bottom = -5.44
+alignment = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Historu" type="Button" parent="PanelContainer/Panel/VBoxContainer"]
+margin_top = 78.0
+margin_right = 809.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 50, 50 )
+text = "Historia"
+
+[node name="Options" type="Button" parent="PanelContainer/Panel/VBoxContainer"]
+margin_top = 132.0
+margin_right = 809.0
+margin_bottom = 182.0
+rect_min_size = Vector2( 50, 50 )
+text = "Opciones"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.778
+
+[connection signal="button_up" from="PanelContainer/Panel/VBoxContainer/Historu" to="." method="_on_History_button_up"]
+[connection signal="button_up" from="PanelContainer/Panel/VBoxContainer/Options" to="." method="_on_Options_button_up"]

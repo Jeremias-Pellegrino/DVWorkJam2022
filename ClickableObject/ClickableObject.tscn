@@ -4,6 +4,7 @@
 [ext_resource path="res://Shaders/glow.tres" type="Material" id=3]
 
 [sub_resource type="RectangleShape2D" id=2]
+resource_local_to_scene = true
 extents = Vector2( 58.8387, 61.7695 )
 
 [node name="Area2D" type="Area2D"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/7- Agarre algo medio a la izquierda.png-326ff726791af90d48b86e5d9e2e2fc0.stex"
+path="res://.import/7- Agarre algo medio a la izquierda.png-76e9e748d2c7fe048c1a331288b29bd5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/personaje-poses/7- Agarre algo medio a la izquierda.png"
-dest_files=[ "res://.import/7- Agarre algo medio a la izquierda.png-326ff726791af90d48b86e5d9e2e2fc0.stex" ]
+source_file="res://Assets-Visual/personaje-poses/7- Agarre algo medio a la izquierda.png"
+dest_files=[ "res://.import/7- Agarre algo medio a la izquierda.png-76e9e748d2c7fe048c1a331288b29bd5.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/caja fuerte.png-d2fe027518c34ad4bb554b46db46dcbf.stex"
+path="res://.import/caja fuerte.png-8af4608879b3c6fada1ef6c3ecc8f78c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/muebles/caja fuerte.png"
-dest_files=[ "res://.import/caja fuerte.png-d2fe027518c34ad4bb554b46db46dcbf.stex" ]
+source_file="res://Assets-Visual/muebles/caja fuerte.png"
+dest_files=[ "res://.import/caja fuerte.png-8af4608879b3c6fada1ef6c3ecc8f78c.stex" ]
 
 [params]
 

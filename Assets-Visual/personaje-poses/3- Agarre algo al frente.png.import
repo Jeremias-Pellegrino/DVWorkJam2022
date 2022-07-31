@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3- Agarre algo al frente.png-ad08a89d98a998c72012aa72cd237854.stex"
+path="res://.import/3- Agarre algo al frente.png-86776c730918a35cabd140095c65de4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/personaje-poses/3- Agarre algo al frente.png"
-dest_files=[ "res://.import/3- Agarre algo al frente.png-ad08a89d98a998c72012aa72cd237854.stex" ]
+source_file="res://Assets-Visual/personaje-poses/3- Agarre algo al frente.png"
+dest_files=[ "res://.import/3- Agarre algo al frente.png-86776c730918a35cabd140095c65de4c.stex" ]
 
 [params]
 

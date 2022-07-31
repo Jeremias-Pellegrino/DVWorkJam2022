@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/silla.png-0c3b222f08cc8bd242f037876ca64401.stex"
+path="res://.import/silla.png-cff51c2e6db3b93f47ff72ad867392a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/muebles/silla.png"
-dest_files=[ "res://.import/silla.png-0c3b222f08cc8bd242f037876ca64401.stex" ]
+source_file="res://Assets-Visual/muebles/silla.png"
+dest_files=[ "res://.import/silla.png-cff51c2e6db3b93f47ff72ad867392a1.stex" ]
 
 [params]
 

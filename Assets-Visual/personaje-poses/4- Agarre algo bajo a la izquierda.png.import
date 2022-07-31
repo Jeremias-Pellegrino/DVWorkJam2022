@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/4- Agarre algo bajo a la izquierda.png-1ad80a137a122c5d05c75f92ab7f9f1b.stex"
+path="res://.import/4- Agarre algo bajo a la izquierda.png-12db714b9a07e3c00e50944fcf7a4155.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://png/personaje-poses/4- Agarre algo bajo a la izquierda.png"
-dest_files=[ "res://.import/4- Agarre algo bajo a la izquierda.png-1ad80a137a122c5d05c75f92ab7f9f1b.stex" ]
+source_file="res://Assets-Visual/personaje-poses/4- Agarre algo bajo a la izquierda.png"
+dest_files=[ "res://.import/4- Agarre algo bajo a la izquierda.png-12db714b9a07e3c00e50944fcf7a4155.stex" ]
 
 [params]
 

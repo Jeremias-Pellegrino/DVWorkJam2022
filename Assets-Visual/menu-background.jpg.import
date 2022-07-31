@@ -2,27 +2,27 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/libromoradot.png-b3b60cc731f542732337e09fb01c65e6.stex"
+path="res://.import/menu-background.jpg-e1fa9edacb044414c839edb707f2e27d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/libromoradot.png"
-dest_files=[ "res://.import/libromoradot.png-b3b60cc731f542732337e09fb01c65e6.stex" ]
+source_file="res://Assets-Visual/menu-background.jpg"
+dest_files=[ "res://.import/menu-background.jpg-e1fa9edacb044414c839edb707f2e27d.stex" ]
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_mode=1
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
-flags/anisotropic=false
+flags/anisotropic=true
 flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

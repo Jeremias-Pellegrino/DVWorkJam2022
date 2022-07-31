@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/WGJam - 23:07:2022 00.mp3-9a15d716aa7fcf39e42053289f90b833.mp3str"
+
+[deps]
+
+source_file="res://Assets-Musica-SFX/WGJam - 23:07:2022 00.mp3"
+dest_files=[ "res://.import/WGJam - 23:07:2022 00.mp3-9a15d716aa7fcf39e42053289f90b833.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
