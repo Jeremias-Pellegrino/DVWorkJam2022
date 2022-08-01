@@ -21,5 +21,6 @@ __meta__ = {
 "_editor_description_": ""
 }
 
+[connection signal="area_entered" from="." to="." method="_on_Area2D_area_entered"]
 [connection signal="mouse_entered" from="." to="." method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Area2D_mouse_exited"]
