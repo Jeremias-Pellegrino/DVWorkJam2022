@@ -1,24 +1,13 @@
-extends PanelContainer
+tool
+extends CenterContainer
 
-export var imagePath: String
-
-onready var textureRect: TextureRect = $Panel/CenterContainer/TextureRect
-
-enum visibility {
-	SHOWN, HIDDING
-}
-
-var state = visibility.SHOWN
+export (Texture) var texture
+onready var textureRect: TextureRect = $Panel/PanelContainer/TextureRect
 
 func _ready():
-	if imagePath == null || not imagePath.empty():
-		textureRect.texture = load(imagePath)
-	elif textureRect == null:
-		pass
-
-#funciona muchisimo mejor que usando sprites. El texturerect es quien invoca mouse_entered..
-func _on_TextureRect_mouse_entered():
-	textureRect.material.set_shader_param("hide", false)
-
-func _on_TextureRect_mouse_exited():
-	textureRect.material.set_shader_param("hide", true)
+	if texture != null:
+		textureRect.texture = texture
+	
+func didUnlockObject(named):
+	if named == self.name:
+		textureRect.material.set_shader_param("hide", false)

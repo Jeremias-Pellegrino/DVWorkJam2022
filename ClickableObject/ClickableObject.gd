@@ -1,11 +1,15 @@
+tool
 extends Area2D
 
+export(Texture) var texture
 onready var sprite : Sprite = $Sprite
-
-signal didInspectObject(object)
+onready var collisionS: CollisionShape2D = $CollisionShape2D
 
 func _ready():
-	pass
+	if texture != null:
+		sprite.texture = texture
+		var size = sprite.texture.get_size() / 2
+		collisionS.shape.extents = Vector2(size)
 	
 func _on_Area2D_mouse_entered():
 	sprite.material.set_shader_param("width", 20)
@@ -14,9 +18,19 @@ func _on_Area2D_mouse_exited():
 	sprite.material.set_shader_param("width", 0)
 
 func _input_event(viewport, event, shape_idx):
-	if event is InputEventMouseMotion:
-		print("reemplazar para usar el click")
+	if event is InputEventMouseButton:
+		didInteracWithObject()
+#		
 
+func didInteracWithObject():
+	var global = get_node("/root/Global")
+	global.objects.interacted[self.name] = true
+
+	get_tree().call_group("InventoryItem", "didUnlockObject", self.name)
+	
+# no detecta la colision noc pocuå
 func _on_Area2D_area_entered(area):
-#	Aca 
-	emit_signal("didInspectObject","chair")
+	var global = get_node("/root/Global")
+	global.objects.interacted["paper"] = true
+	print(global.objects.interacted)
+#	emit_signal("didInspectObject","chair")

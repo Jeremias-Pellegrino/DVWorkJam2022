@@ -1,7 +1,7 @@
 extends Control
 
 onready var audioStreamPlayer = $AudioStreamPlayer
-const path: String = "res://Dimension1/Dimension1.tscn"
+const path: String = "res://Game/Game.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -7,7 +7,7 @@
 resource_local_to_scene = true
 extents = Vector2( 58.8387, 61.7695 )
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["clickeable"]]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -16,7 +16,6 @@ shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 material = ExtResource( 3 )
-scale = Vector2( 3, 3 )
 __meta__ = {
 "_editor_description_": ""
 }
