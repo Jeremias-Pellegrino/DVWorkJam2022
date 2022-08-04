@@ -69,11 +69,11 @@ position = Vector2( 1009, 199 )
 texture = ExtResource( 18 )
 
 [node name="Silla2" parent="Container/Dimension1" instance=ExtResource( 13 )]
-position = Vector2( 672, 314 )
+position = Vector2( 679, 280 )
 texture = ExtResource( 11 )
 
 [node name="Tinta" parent="Container/Dimension1" instance=ExtResource( 13 )]
-position = Vector2( 815, 319 )
+position = Vector2( 829, 279 )
 texture = ExtResource( 11 )
 
 [node name="Inventory" type="Node2D" parent="Container"]

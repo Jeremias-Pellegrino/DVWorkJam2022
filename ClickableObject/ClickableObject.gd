@@ -30,7 +30,8 @@ func didInteracWithObject():
 	
 # no detecta la colision noc pocuå
 func _on_Area2D_area_entered(area):
-	var global = get_node("/root/Global")
-	global.objects.interacted["paper"] = true
-	print(global.objects.interacted)
+	if area is Margarete:
+		var global = get_node("/root/Global")
+		global.objects.interacted[self.name] = true
+		print(global.objects.interacted)
 #	emit_signal("didInspectObject","chair")

@@ -5,8 +5,8 @@ class_name Margarete
 enum state {
 	MOVE, 
 	IDLE
-
 }
+
 onready var animation: AnimatedSprite = $AnimatedSprite
 var speed = 200
 var speedVector = Vector2(speed,speed)

@@ -5,8 +5,8 @@ const path: String = "res://Game/Game.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	audioStreamPlayer.play()
-
+	#audioStreamPlayer.play()
+	pass
 
 func _input(event):
 	pass
