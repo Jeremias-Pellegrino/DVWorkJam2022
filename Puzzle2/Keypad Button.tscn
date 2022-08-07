@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/Puzzle2/Keypad Button.gd" type="Script" id=1]
+[ext_resource path="res://Puzzle2/Keypad Button.gd" type="Script" id=1]
+[ext_resource path="res://Puzzle2/NotoSans-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 200
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 2 )
 
 [node name="Keypad" type="Control"]
 anchor_right = 1.0
@@ -14,134 +23,146 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
-margin_right = 640.0
-margin_bottom = 178.0
+margin_right = 1280.0
+margin_bottom = 358.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="ColorRect" type="ColorRect" parent="VBoxContainer/MarginContainer"]
-margin_right = 640.0
-margin_bottom = 178.0
+margin_right = 1280.0
+margin_bottom = 358.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.494118, 0.494118, 0.494118, 1 )
 
 [node name="Label" type="Label" parent="VBoxContainer/MarginContainer"]
-margin_right = 640.0
-margin_bottom = 178.0
+margin_right = 1280.0
+margin_bottom = 358.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "1234"
+custom_fonts/font = SubResource( 1 )
 align = 1
 valign = 1
 
 [node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
-margin_top = 182.0
-margin_right = 640.0
-margin_bottom = 360.0
+margin_top = 362.0
+margin_right = 1280.0
+margin_bottom = 720.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 3
 
 [node name="Button1" type="Button" parent="VBoxContainer/GridContainer"]
-margin_right = 210.0
-margin_bottom = 41.0
+margin_right = 424.0
+margin_bottom = 86.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "1"
 
 [node name="Button2" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 214.0
-margin_right = 424.0
-margin_bottom = 41.0
+margin_left = 428.0
+margin_right = 852.0
+margin_bottom = 86.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "2"
 
 [node name="Button3" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 428.0
-margin_right = 638.0
-margin_bottom = 41.0
+margin_left = 856.0
+margin_right = 1280.0
+margin_bottom = 86.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "3"
 
 [node name="Button4" type="Button" parent="VBoxContainer/GridContainer"]
-margin_top = 45.0
-margin_right = 210.0
-margin_bottom = 86.0
+margin_top = 90.0
+margin_right = 424.0
+margin_bottom = 176.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "4"
 
 [node name="Button5" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 214.0
-margin_top = 45.0
-margin_right = 424.0
-margin_bottom = 86.0
+margin_left = 428.0
+margin_top = 90.0
+margin_right = 852.0
+margin_bottom = 176.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "5"
 
 [node name="Button6" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 428.0
-margin_top = 45.0
-margin_right = 638.0
-margin_bottom = 86.0
+margin_left = 856.0
+margin_top = 90.0
+margin_right = 1280.0
+margin_bottom = 176.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "6"
 
 [node name="Button7" type="Button" parent="VBoxContainer/GridContainer"]
-margin_top = 90.0
-margin_right = 210.0
-margin_bottom = 131.0
+margin_top = 180.0
+margin_right = 424.0
+margin_bottom = 266.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "7"
 
 [node name="Button8" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 214.0
-margin_top = 90.0
-margin_right = 424.0
-margin_bottom = 131.0
+margin_left = 428.0
+margin_top = 180.0
+margin_right = 852.0
+margin_bottom = 266.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "8"
 
 [node name="Button9" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 428.0
-margin_top = 90.0
-margin_right = 638.0
-margin_bottom = 131.0
+margin_left = 856.0
+margin_top = 180.0
+margin_right = 1280.0
+margin_bottom = 266.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "9"
 
 [node name="Button10" type="Button" parent="VBoxContainer/GridContainer"]
-margin_top = 135.0
-margin_right = 210.0
-margin_bottom = 176.0
+margin_top = 270.0
+margin_right = 424.0
+margin_bottom = 356.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "C"
 
 [node name="Button11" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 214.0
-margin_top = 135.0
-margin_right = 424.0
-margin_bottom = 176.0
+margin_left = 428.0
+margin_top = 270.0
+margin_right = 852.0
+margin_bottom = 356.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "0"
 
 [node name="Button12" type="Button" parent="VBoxContainer/GridContainer"]
-margin_left = 428.0
-margin_top = 135.0
-margin_right = 638.0
-margin_bottom = 176.0
+margin_left = 856.0
+margin_top = 270.0
+margin_right = 1280.0
+margin_bottom = 356.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
 text = "OK"
 
 [connection signal="pressed" from="VBoxContainer/GridContainer/Button1" to="." method="_on_Button1_pressed"]
